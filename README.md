@@ -1,8 +1,8 @@
 # xrayid
 
 
-Overview:
-Neural Networks allow for a whole new world of classification solutions. Neural networks can pick up on patterns sometimes beyond the human eye. The challenge today is bringing a neural network to bear 
+## Overview:
+Neural Networks allow for a whole new world of classification solutions. Neural networks can pick up on patterns sometimes beyond the human eye. The challenge today is bringing a neural network to bear on identifying pnenomia in a human lung. 
 
 ## Business Problem:
 
