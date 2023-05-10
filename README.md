@@ -4,7 +4,7 @@
 Overview:
 Neural Networks allow for a whole new world of classification solutions. Neural networks can pick up on patterns sometimes beyond the human eye. The challenge today is bringing a neural network to bear 
 
-Business Problem:
+## Business Problem:
 
 For 60% of the world radiology is not an available medicine. While donated equipment is becoming increasingly available and technicians are being trained to operate them, radiologist able to correctly identify a radiological scan are not available in these countries.
 
@@ -15,7 +15,7 @@ Resources are still limited and a neural network cannot and should not take the 
 And thus we could help the doctor diagnose more patients in the same amount of time.  
 
 
-Data:
+## Data:
 
 The data is collection of about 6000 X-rays of Children’s lungs taken by the university of California San Diego. In 2018
 
@@ -30,7 +30,7 @@ When done right it allows for various perspectives of the same image, think of i
 Not every lung is positioned the same way when it is scanned. By giving more orientations the model could become more robust effectively making our limited data set a much large one but use of altering the information.
 
 
-Methods:
+## Methods:
 
 As mentioned we used a data generator to augment our data. Simply put it takes an image and then creates variations of that image to make the model have more information to train on. Things like rotating the image slightly a few degrees in a few directions, or shifting the center of the image and filling in empty space on either side all work.
 
@@ -42,7 +42,7 @@ We want to minimize false negatives, which means maximizing sensitivity. A valid
 
 
 
-Results:
+## Results:
 
 *picture of results Versus training plots*
 
@@ -64,7 +64,7 @@ To test this we tried reducing the image size as small 25x25 pixels. This result
 
 
 
-Conclusions:
+## Conclusions:
 
 After some refinement our model was able to detect the presence of a pneumonia in 98% of the images it was trained on.
 What we dont know is how long after being infected the patient was x-rayed, we are unsure when this model should be implemented.  
@@ -74,6 +74,6 @@ We would like the model to be able to differentiate between other respiratory di
 We believe that what the model is really doing is identifying when a pair of lungs are healthy, as the model was unable to differentiate between two types of pneumonia it may also be unable to differentiate between pneumonia and say another disease.  
 
 
-Next Steps:
+## Next Steps:
 
 We’d recommend increasing the training images, and targets to include all respiratory illnesses and if possible to include patient charts as a factor in the networks decisions making.
