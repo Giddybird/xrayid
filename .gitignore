@@ -133,3 +133,5 @@ im.db
 Data/
 ResizedData/
 
+# ignore .DS_Store
+.DS_Store
