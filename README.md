@@ -17,9 +17,9 @@ And thus we could help the doctor diagnose more patients in the same amount of t
 
 ## Data:
 
-The data is collection of about 6000 X-rays of Children’s lungs taken by the university of California San Diego. In 2018
+The data is collection of about 6000 X-rays of Children’s lungs taken by the university of California San Diego. University of California San Diego, Guangzhou Women and Children’s Medical Center Back in 2018.
 
-  (University of California San Diego, Guangzhou Women and Children’s Medical Center)  
+  
 In order to make our model more robust we used what is called a data generator. In essence it takes know pictures and makes slight alterations to them to improve the models performance.  
 
 
@@ -54,13 +54,13 @@ For our untrained eyes its impossible for us to distinguish between these two im
 
 However, the model was unable to differentiate between viral and bacterial cases of pneumonia. Meaning for multi class identification problems the current approach was unable to function at these levels.  This would also suggest that the model would be unable to differentiate between pneumonia, and other respiratory disease, like lymphoma, COPD or others. Due to the laws protecting personal medical information data is not abundant for testing or training.
 
-Further it is our belief that this model is operating based on a “brightness” approach, meaning what the model is detecting is just the presence of particles in the lungs, indicating an immuno-response. 
+Further it is our belief that this model is operating based on a “brightness” approach, meaning what the model is detecting is just the presence of particles in the lungs, indicating an immuno-response, or foriegn bodies. 
 
 Brighter being more “stuff” in the lungs for the x-ray to illuminate the stuff being virus/ bacteria and the bodies immuno-response to them.
 
 Suggesting that this model is not especially qualified to identify pneumonia, but rather the presence of an immuno-response or more accurately the presence of particulate in the lungs.
 
-To test this we tried reducing the image size as small 25x25 pixels. This resulted in a loss of accuracy indicating that this theory was did not hold. However what patterns the model is detecting at high resolutions we don’t know, the neural network being a blackbox model makes this difficult to determine. 
+To test this we tried reducing the image size as small 25x25 pixels. This resulted in a loss of accuracy for on testing data indicating that this theory was did not hold. However what patterns the model is detecting at high resolutions we don’t know.   The neural network being a blackbox model makes this difficult to determine. 
 
 
 
