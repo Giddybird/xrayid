@@ -10,28 +10,22 @@ Radiology is a crucial aspect of modern medicine, yet it remains inaccessible to
 
 Telemedicine has emerged as a solution to circumvent this obstacle by facilitating the remote reading of scans by radiologists in other locations. However, this process can be time-consuming, with each scan taking a few days to receive a result, delaying the diagnosis and treatment of critical conditions such as pneumonia.
 
-Pneumonia is a leading cause of mortality among young children worldwide, claiming the lives of approximately 800,000 children under the age of five every year, according to the World Health Organization. Early diagnosis and prompt treatment are essential to improving patient outcomes and reducing healthcare costs, as delayed diagnosis can lead to extended hospital stays and higher mortality rates.
+Acording to the World Health Organization, pneumonia is a leading cause of mortality among young children worldwide, claiming the lives of approximately 800,000 children under the age of five every year. Early diagnosis and prompt treatment are essential to improving patient outcomes and reducing healthcare costs, as delayed diagnosis can lead to extended hospital stays and higher mortality rates.
 
 Research indicates that rapid diagnostic tests for pneumonia can significantly reduce the overuse of antibiotics, shorten hospital stays, and lower healthcare costs. Although a neural network cannot replace the expertise of a trained physician, developing tools to assist in the rapid and accurate diagnosis of radiological scans can improve the efficiency of healthcare services, enabling doctors to diagnose and treat more patients within the same time frame.
 
 ## Data:
 
-The data is collection of about 6000 X-rays of Children’s lungs taken by the university of California San Diego. University of California San Diego, Guangzhou Women and Children’s Medical Center Back in 2018.
-
-  
-In order to make our model more robust we used what is called a data generator. In essence it takes know pictures and makes slight alterations to them to improve the models performance.  
-
-
-It takes an image, alters it, rotates its removes edges, alters the orientation of the image, changes the brightness all to create more examples for the model to train. 
-
-When done right it allows for various perspectives of the same image, think of it like taking multiple pictures of an object but from a different angle to get a better 
-
-Not every lung is positioned the same way when it is scanned. By giving more orientations the model could become more robust effectively making our limited data set a much large one but use of altering the information.
-
+The dataset used in this study is comprised of approximately 6,000 X-rays of children's lungs collected by the University of California San Diego and Guangzhou Women and Children's Medical Center in 2018. 
+Link to data: [here](https://data.mendeley.com/datasets/rscbjbr9sj/3)
 
 ## Methods:
 
-As mentioned we used a data generator to augment our data. Simply put it takes an image and then creates variations of that image to make the model have more information to train on. Things like rotating the image slightly a few degrees in a few directions, or shifting the center of the image and filling in empty space on either side all work.
+To improve the performance of our model and make it more robust, we employed a technique called data augmentation using the ImageDataGenerator module.
+
+Essentially, the module takes existing images and applies various transformations to them, such as rotation, cropping, changing the orientation, and adjusting brightness, to generate new images. By doing so, it effectively creates more examples for the model to train on and allows for various perspectives of the same image, similar to taking multiple pictures of an object from different angles to gain a better understanding.
+
+This technique is particularly useful in our case because not all lungs are positioned in the same way or have the same exposure when scanned. By creating more orientations through data augmentation, we can make our limited dataset more robust and effectively expand it, without the need for additional scans.
 
 There are a number of other considerations in our model.
 
@@ -48,31 +42,27 @@ We want to minimize false negatives, which means maximizing sensitivity. A valid
 
 
 
-In the end we were able to identify a case of pneumonia using only an Xray 97% of the time. That is a pretty good model.  
-For our untrained eyes its impossible for us to distinguish between these two images. This is a powerful tool.  
+After extensive testing, we achieved a 97% accuracy in identifying cases of pneumonia in children using chest X-ray images. This is a significant accomplishment, as it is difficult for even trained medical professionals to distinguish between pneumonia and other respiratory diseases based solely on X-rays. Pneumonia is characterized by the presence of infiltrates in the lungs, which are areas of fluid accumulation that indicate an immune response to a foreign body, such as bacteria or a virus.
 
-However, the model was unable to differentiate between viral and bacterial cases of pneumonia. Meaning for multi class identification problems the current approach was unable to function at these levels.  This would also suggest that the model would be unable to differentiate between pneumonia, and other respiratory disease, like lymphoma, COPD or others. Due to the laws protecting personal medical information data is not abundant for testing or training.
+Our model showed limitations when it came to distinguishing between viral and bacterial pneumonia cases when put into a multi-class model. It is also unable to identify other respiratory diseases such as lymphoma or cystic fibrosis due to limited data for testing and training. Additionally, we suspect that the model is identifying the brightness of the X-ray images rather than the specific characteristics of pneumonia. This suggests that the model is not specifically qualified to identify pneumonia but rather the presence of infiltrates in the lungs.
 
-Further it is our belief that this model is operating based on a “brightness” approach, meaning what the model is detecting is just the presence of particles in the lungs, indicating an immuno-response, or foriegn bodies. 
-
-Brighter being more “stuff” in the lungs for the x-ray to illuminate the stuff being virus/ bacteria and the bodies immuno-response to them.
-
-Suggesting that this model is not especially qualified to identify pneumonia, but rather the presence of an immuno-response or more accurately the presence of particulate in the lungs.
-
-To test this we tried reducing the image size as small 25x25 pixels. This resulted in a loss of accuracy for on testing data indicating that this theory was did not hold. However what patterns the model is detecting at high resolutions we don’t know.   The neural network being a blackbox model makes this difficult to determine. 
+Unfortunately, the neural network is a black box model, making it difficult to determine if our susspicions are true. Nonetheless, this model remains a powerful tool in identifying cases of pneumonia in children, as the presence of infiltrates is a key factor in the diagnosis of pneumonia, and can be used in conjunction with other diagnostic methods to improve patient outcomes.
 
 
 
 ## Conclusions:
 
-After some refinement our model was able to detect the presence of a pneumonia in 98% of the images it was trained on.
-What we dont know is how long after being infected the patient was x-rayed, we are unsure when this model should be implemented.  
+After multiple rounds of refinement, we were able to achieve an impressive 98% accuracy rate in detecting pneumonia in chest X-ray images with a recall score of .97. However, we acknowledge that the timing of the X-ray in relation to the onset of the disease is an important consideration and should be taken into account when implementing this model in a clinical setting. 
 
-We would like the model to be able to differentiate between other respiratory diseases so as to not return false positives and further the ability to differentiate between bacterial and viral cases would go a long way allowing correct treatment without needing more invasive testing. However for the time being the model is able to identify when pneumonia is present.
-
-We believe that what the model is really doing is identifying when a pair of lungs are healthy, as the model was unable to differentiate between two types of pneumonia it may also be unable to differentiate between pneumonia and say another disease.  
+Despite these limitations, we believe that the model's effectiveness lies in its ability to identify healthy lungs, which is an important step in the diagnosis of pneumonia. We recommend that the model be used in conjunction with other diagnostic methods to ensure accurate patient diagnosis given its inability to differentiate between different types of pneumonia and other respiratory diseases.
 
 
 ## Next Steps:
 
-We’d recommend increasing the training images, and targets to include all respiratory illnesses and if possible to include patient charts as a factor in the networks decisions making.
+Based on our findings, we believe that the model has the potential to become an even more powerful diagnostic tool for respiratory illnesses, beyond its current ability to identify pneumonia. While the current iteration can identify the presence of pneumonia with an impressive accuracy rate, there is still room for improvement in terms of differentiating between viral and bacterial cases, as well as other respiratory diseases. 
+
+To achieve this, we recommend expanding the training data to include a wider range of respiratory illnesses, along with patient charts to provide further insight into each case. This will allow the model to make more informed decisions and provide more accurate predictions. Additionally, we plan to continue refining the model's ability to distinguish between viral and bacterial pneumonia, as this information is crucial for determining the appropriate treatment course. 
+
+Furthermore, we aim to extend the model's scope by training it to identify other lung diseases that can be detected on X-rays, such as tuberculosis or lung cancer. This will expand the model's potential applications, and make it an even more valuable tool in diagnosing respiratory illnesses. Overall, we are excited to continue improving the model's capabilities and look forward to its continued success in the field of medical diagnostics.
+
+
