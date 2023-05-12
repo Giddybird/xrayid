@@ -75,7 +75,7 @@ Furthermore, we aim to extend the model's scope by training it to identify other
 
 Our process is available in this [Jupyter Notebook](./Final_notebook.ipynb) or abbreviated in this [presentation](./Pneumonia_X-ray_Recognition_ppt-AP,GM,KA.pdf).
 
-We can be contacted via email at [alisonsjpark@gmail.com \(Alison\)](mailto:alisonsjpark@gmail.com), [kmatk620@gmail.com \(Kevin\)](mailto:kmatk620@gmail.com), and [milesgideon@gmail.com \(Alison\)](mailto:milesgideon@gmail.com)
+We can be contacted via email at [alisonsjpark@gmail.com \(Alison\)](mailto:alisonsjpark@gmail.com), [kmatk620@gmail.com \(Kevin\)](mailto:kmatk620@gmail.com), and [milesgideon@gmail.com \(Gideon\)](mailto:milesgideon@gmail.com)
 
 ```
 ├── images
