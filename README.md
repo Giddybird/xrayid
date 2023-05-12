@@ -47,7 +47,7 @@ After extensive testing, we achieved a 99.7% recall score in identifying cases o
 ![Bar Chart](images/BarCharts.png)
 
 This bar graph shows that when a patient has Pneumonia, our model can diagnose it 99.7% of the time. The model does less well with regards to correctly diagnosing patients who have healthy lungs, with only 80% of our positive diagnoses actually having Pneumonia.
-------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Our model showed limitations when it came to distinguishing between viral and bacterial pneumonia cases when put into a multi-class model. It is also unable to identify other respiratory diseases such as lymphoma or cystic fibrosis due to limited data for testing and training. Additionally, we suspect that the model is identifying the brightness of the X-ray images rather than the specific characteristics of pneumonia. This suggests that the model is not specifically qualified to identify pneumonia but rather the presence of infiltrates in the lungs.
 
