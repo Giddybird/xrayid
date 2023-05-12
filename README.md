@@ -19,6 +19,8 @@ Research indicates that rapid diagnostic tests for pneumonia can significantly r
 The dataset used in this study is comprised of approximately 6,000 X-rays of children's lungs collected by the University of California San Diego and Guangzhou Women and Children's Medical Center in 2018. 
 Link to data: [here](https://data.mendeley.com/datasets/rscbjbr9sj/3)
 
+Kermany D, Goldbaum M, Cai W et al. Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning. Cell. 2018; 172(5):1122-1131. doi:10.1016/j.cell.2018.02.010.
+
 ## Methods:
 
 To improve the performance of our model and make it more robust, we employed a technique called data augmentation using the ImageDataGenerator module.
