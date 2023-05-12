@@ -6,14 +6,13 @@ Neural Networks allow for a whole new world of classification solutions. Neural 
 
 ## Business Problem:
 
-For 60% of the world radiology is not an available medicine. While donated equipment is becoming increasingly available and technicians are being trained to operate them, radiologist able to correctly identify a radiological scan are not available in these countries.
+Radiology is a crucial aspect of modern medicine, yet it remains inaccessible to a staggering 60% of the global population. While efforts to donate equipment and train technicians have improved accessibility to radiological services, the scarcity of skilled radiologists in many countries remains a challenge.
 
-Many have worked around the problem through telemedicine. Sending scans and X-rays to other radiologist who will read them and send back the results.  
-Reading each scan takes on average 10 minutes. 
+Telemedicine has emerged as a solution to circumvent this obstacle by facilitating the remote reading of scans by radiologists in other locations. However, this process can be time-consuming, with each scan taking a few days to receive a result, delaying the diagnosis and treatment of critical conditions such as pneumonia.
 
-Resources are still limited and a neural network cannot and should not take the place of a trained doctor however if we could help the doctor identify the scans more efficiently.  
-And thus we could help the doctor diagnose more patients in the same amount of time.  
+Pneumonia is a leading cause of mortality among young children worldwide, claiming the lives of approximately 800,000 children under the age of five every year, according to the World Health Organization. Early diagnosis and prompt treatment are essential to improving patient outcomes and reducing healthcare costs, as delayed diagnosis can lead to extended hospital stays and higher mortality rates.
 
+Research indicates that rapid diagnostic tests for pneumonia can significantly reduce the overuse of antibiotics, shorten hospital stays, and lower healthcare costs. Although a neural network cannot replace the expertise of a trained physician, developing tools to assist in the rapid and accurate diagnosis of radiological scans can improve the efficiency of healthcare services, enabling doctors to diagnose and treat more patients within the same time frame.
 
 ## Data:
 
