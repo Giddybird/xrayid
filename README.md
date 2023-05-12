@@ -30,13 +30,11 @@ Essentially, the module takes existing images and applies various transformation
 
 This technique is particularly useful in our case because not all lungs are positioned in the same way or have the same exposure when scanned. By creating more orientations through data augmentation, we can make our limited dataset more robust and effectively expand it, without the need for additional scans.
 
-There are a number of other considerations in our model.
+In addition to other model considerations, minimizing false negatives is a priority for our project. In other words, it is important to identify as many positive cases as possible to avoid missing any true cases. To achieve this objective, we have chosen recall as our validation metric, also known as sensitivity or true positive rate.
 
-We want to minimize false negatives, which means maximizing sensitivity. A validation metric that reflects this objective is recall, also known as sensitivity or true positive rate. Recall measures the proportion of true positive cases (i.e., correctly predicted positives) out of all actual positive cases. So, by optimizing for recall, we are prioritizing the identification of all positive cases, even if this means that some true negatives may be misclassified as false positives.
+Recall measures the proportion of true positive cases out of all actual positive cases. By optimizing for recall, we prioritize the identification of all positive cases, even if some true negatives may be misclassified as false positives.
 
-
-
-
+When diagnosing pneumonia in children, missing a positive case can have severe consequences and can lead to delayed treatment and potentially fatal outcomes. Therefore, maximizing sensitivity or recall is critical to identify as many positive cases as possible. However, it it important to note that optimizing for recall may result in a higher number of false positives, which can lead to unnecessary medical procedures and increased healthcare costs. Therefore, it is important to strike a balance between recall and precision in order to ensure the overall effectiveness of the model.
 
 ## Results:
 
