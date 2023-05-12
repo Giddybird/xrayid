@@ -42,12 +42,16 @@ When diagnosing pneumonia in children, missing a positive case can have severe c
 
 
 
-After extensive testing, we achieved a 97% accuracy in identifying cases of pneumonia in children using chest X-ray images. This is a significant accomplishment, as it is difficult for even trained medical professionals to distinguish between pneumonia and other respiratory diseases based solely on X-rays. Pneumonia is characterized by the presence of infiltrates in the lungs, which are areas of fluid accumulation that indicate an immune response to a foreign body, such as bacteria or a virus.
+After extensive testing, we achieved a 99.7% recall score in identifying cases of pneumonia in children using chest X-ray images. This is a significant accomplishment, as it is difficult for even trained medical professionals to distinguish between pneumonia and other respiratory diseases based solely on X-rays. Pneumonia is characterized by the presence of infiltrates in the lungs, which are areas of fluid accumulation that indicate an immune response to a foreign body, such as bacteria or a virus.
+
+![Bar Chart](images/BarCharts.png)
+
+This bar graph shows that when a patient has Pneumonia, our model can diagnose it 99.7% of the time. The model does less well with regards to correctly diagnosing patients who have healthy lungs, with only 80% of our positive diagnoses actually having Pneumonia.
+------------------------------------------------------------------------------------------------------------------------------------------
 
 Our model showed limitations when it came to distinguishing between viral and bacterial pneumonia cases when put into a multi-class model. It is also unable to identify other respiratory diseases such as lymphoma or cystic fibrosis due to limited data for testing and training. Additionally, we suspect that the model is identifying the brightness of the X-ray images rather than the specific characteristics of pneumonia. This suggests that the model is not specifically qualified to identify pneumonia but rather the presence of infiltrates in the lungs.
 
 Unfortunately, the neural network is a black box model, making it difficult to determine if our susspicions are true. Nonetheless, this model remains a powerful tool in identifying cases of pneumonia in children, as the presence of infiltrates is a key factor in the diagnosis of pneumonia, and can be used in conjunction with other diagnostic methods to improve patient outcomes.
-
 
 
 ## Conclusions:
