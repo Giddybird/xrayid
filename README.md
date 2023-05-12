@@ -53,9 +53,11 @@ Unfortunately, the neural network is a black box model, making it difficult to d
 
 ## Conclusions:
 
-After multiple rounds of refinement, we were able to achieve an impressive 98% accuracy rate in detecting pneumonia in chest X-ray images with a recall score of .97. However, we acknowledge that the timing of the X-ray in relation to the onset of the disease is an important consideration and should be taken into account when implementing this model in a clinical setting. 
+After refining our Convolutional Neural Network model, we achieved a remarkable 99% accuracy rate in detecting pneumonia in chest X-ray images. However, it is important to consider the timing of the X-ray in relation to the onset of the disease when implementing this model in a clinical setting. To further improve the accuracy of its predictions, we recommend enhancing the model's ability to differentiate between viral and bacterial cases, as well as other respiratory diseases.
 
-Despite these limitations, we believe that the model's effectiveness lies in its ability to identify healthy lungs, which is an important step in the diagnosis of pneumonia. We recommend that the model be used in conjunction with other diagnostic methods to ensure accurate patient diagnosis given its inability to differentiate between different types of pneumonia and other respiratory diseases.
+Despite its current limitations, the model's ability to identify healthy lungs is a crucial step in pneumonia diagnosis. However, as it cannot differentiate between different types of pneumonia or other respiratory diseases, we recommend using the model in conjunction with other diagnostic methods to ensure accurate patient diagnosis.
+
+In conclusion, our model can effectively detect the presence of pneumonia in 99.7% of infected patients, making it a valuable tool in decreasing the cost of treating respiratory illnesses and aiding in faster treatment times. Furthermore, it has the potential to assist in triaging patients based on the severity of their condition and optimize the allocation of valuable radiologist resources. Therefore, we suggest expanding the model's training data to include a wider range of respiratory illnesses and patient charts as factors in the network's decision-making process, and continuing to improve its ability to distinguish between viral and bacterial pneumonia.
 
 
 ## Next Steps:
