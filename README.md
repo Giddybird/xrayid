@@ -80,6 +80,7 @@ We can be contacted via email at [alisonsjpark@gmail.com \(Alison\)](mailto:alis
 ```
 ├── images
 │   ├── BarCharts.png
+│   ├── Final_image.png
 │   ├── logo.png
 ├── scratch_notebooks
 │   ├── Alisons_notebook.ipynb
