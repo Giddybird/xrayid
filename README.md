@@ -38,8 +38,7 @@ When diagnosing pneumonia in children, missing a positive case can have severe c
 
 ## Results:
 
-*picture of results Versus training plots*
-
+! ..images/Final_Image.png
 
 
 
