@@ -68,7 +68,7 @@ To achieve this, we recommend expanding the training data to include a wider ran
 
 Furthermore, we aim to extend the model's scope by training it to identify other lung diseases that can be detected on X-rays, such as tuberculosis or lung cancer. This will expand the model's potential applications, and make it an even more valuable tool in diagnosing respiratory illnesses. Overall, we are excited to continue improving the model's capabilities and look forward to its continued success in the field of medical diagnostics.
 
-
+```
 ├── images
 │   ├── BarCharts.png
 │   ├── logo.png
