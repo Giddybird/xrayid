@@ -67,6 +67,12 @@ To achieve this, we recommend expanding the training data to include a wider ran
 
 Furthermore, we aim to extend the model's scope by training it to identify other lung diseases that can be detected on X-rays, such as tuberculosis or lung cancer. This will expand the model's potential applications, and make it an even more valuable tool in diagnosing respiratory illnesses. Overall, we are excited to continue improving the model's capabilities and look forward to its continued success in the field of medical diagnostics.
 
+## For Inquiries, Business Proposals, or Additional Information...
+
+Our process is available in this [Jupyter Notebook](./Final_notebook.ipynb) or abbreviated in this [presentation](./Pneumonia_X-ray_Recognition_ppt-AP,GM,KA.pdf).
+
+We can be contacted via email at [alisonsjpark@gmail.com \(Alison\)](mailto:alisonsjpark@gmail.com), [kmatk620@gmail.com \(Kevin\)](mailto:kmatk620@gmail.com), and [milesgideon@gmail.com \(Alison\)](mailto:milesgideon@gmail.com)
+
 ```
 ├── images
 │   ├── BarCharts.png
