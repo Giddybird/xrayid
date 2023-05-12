@@ -80,6 +80,6 @@ Furthermore, we aim to extend the model's scope by training it to identify other
 │   ├── Kevins_noetbook_3class.ipynb
 ├── .gitignore
 ├── Final_notebook.ipynb
-├── Microsoft_Studios_Presentation.pdf
+├── Pneumonia_X-ray_Recognition_ppt-AP,GM,KA.pdf
 └── README.md
 ```
